@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-container {
+    @apply mx-4 md:mx-16
+}
+.my-h3 {
+    @apply font-extrabold text-base text-regalBlack
+}
+.my-h5 {
+    @apply text-xl font-bold text-[#474747]
+}
+.my-span {
+    @apply font-medium text-[#757575]
+}
+.my-hr {
+    @apply my-6 bg-gray-500 h-[2px] w-full
+}
+.my-btn {
+    @apply text-xl font-extrabold text-white bg-blue-400 rounded-lg
+}
+.my-style {
+    @apply py-2 px-5 border border-blue-400 rounded-lg text-base font-extrabold text-blue-400
+}
