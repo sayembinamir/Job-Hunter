@@ -3,7 +3,7 @@
 
 ## Live Link
 
-Hosted in Netlify -> [JobBoosters](https://meek-quokka-815dca.netlify.app/)
+Hosted in Netlify -> [jobs-hunter](https://meek-quokka-815dca.netlify.app/)
 
 # Home-Page:
 
