@@ -5,10 +5,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home';
 import Main from './Layout/Main';
+import Home from './Home';
 import Statistics from './Statistics';
-
+import AppliedJobs from './AppliedJobs';
+import Blog from './Blog';
+import NotFound from './NotFound';
+import JobDetails from './JobDetails';
+import { jobData } from './loader/customLoader';
 
 const router = createBrowserRouter([
   {
@@ -16,12 +20,31 @@ const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path:'/',
-        element:<Home></Home>,
+        path: '/',
+        element: <Home></Home>,
+        loader: () => fetch('/category.json')
       },
       {
-        path:'statistics',
-        element:<Statistics></Statistics>,
+        path: 'job/:id',
+        element: <JobDetails></JobDetails>,
+        loader: ({params}) => fetch('/jobs.json')
+      },
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path: 'appliedjobs',
+        element: <AppliedJobs></AppliedJobs>,
+        loader: jobData
+      },
+      {
+        path: 'blog',
+        element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element: <NotFound></NotFound>
       },
     ]
   }
