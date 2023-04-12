@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <div className='my-container mt-14'>
             <h1 className='text-3xl font-bold text-regalBlack text-center mb-12'>Frequently Asked Questions</h1>
-            <Accordion alwaysOpen={true}>
+            <Accordion alwaysOpen={}>
                 <Accordion.Panel>
                     <Accordion.Title>
                         When should you use context API?
