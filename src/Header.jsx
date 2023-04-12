@@ -4,7 +4,7 @@ import ActiveLink from './ActiveLink';
 const Header = () => {
     return (
         <div className='flex flex-col items-center justify-between my-container md:flex-row bg-gray-200 p-3'>
-            <h1 className='text-2xl font-extrabold md:text-3xl text-regalBlack mb-4 md:mb-0'>JobBoosters</h1>
+            <h1 className='text-2xl font-extrabold md:text-3xl text-regalBlack mb-4 md:mb-0'>JOB-HUNTER</h1>
             <nav className='flex flex-col gap-4 md:gap-10 text-base font-bold md:flex-row'>
                 <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
